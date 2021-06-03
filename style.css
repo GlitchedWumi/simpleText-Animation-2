@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(20, 15, 41);
+}
+
+h1 {
+    color: #ccc;
+    line-height: 90vh;
+    font-size: 4rem;
+    text-align: center;
+}
+
+span {
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    opacity: 0;
+    transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+}
+
+span.fade {
+    opacity: 1;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition-delay: 1s;
+    animation-name: fill;
+    animation-delay: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fill {
+    0% {
+        color: rgb(20, 15, 41);
+    }
+    50% {
+        color: #ccc;
+    }
+    100% {
+        color: whitesmoke;
+    }
+}
